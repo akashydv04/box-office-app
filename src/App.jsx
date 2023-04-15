@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Starred from './pages/Starred';
 import PageNotFound from './pages/PageNotFound';
 import MainLayout from './component/MainLayout';
+import Show from './pages/Show';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/starred" element={<Starred />} />
         </Route>
+
+        <Route path="/show/:showId" element={<Show />} />
         <Route path="*" element={<PageNotFound />} />
         {/* <Route path="/" element={<App />}>
           <Route index element={<Home />} />

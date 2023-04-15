@@ -6,6 +6,7 @@ const ShowGrid = ({ shows }) => {
       {shows.map(data => (
         <ShowCard
           key={data.show.id}
+          id={data.show.id}
           name={data.show.name}
           summary={data.show.summary}
           image={
