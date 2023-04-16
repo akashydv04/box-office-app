@@ -9,3 +9,4 @@ const apiGet = async query => {
 
 export const searchForShows = query => apiGet(`/search/shows?q=${query}`);
 export const searchForPeople = query => apiGet(`/search/people?q=${query}`);
+export const getShowByID = showId => apiGet(`/shows/${showId}`);
