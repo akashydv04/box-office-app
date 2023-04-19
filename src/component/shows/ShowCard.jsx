@@ -14,6 +14,10 @@ const ShowCard = ({ name, image, id, summary }) => {
 
       <div>
         <Link to={`/show/${id}`}>Read More</Link>
+        {/* Below code for open new tab */}
+        {/* <a href={`/show/${id}`} target="_blank" rel="noreferrer"> */}
+        {/* Read More
+        </a> */}
         <button type="button">Star Me</button>
       </div>
     </div>
