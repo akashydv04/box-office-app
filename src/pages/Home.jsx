@@ -5,6 +5,7 @@ import ShowGrid from '../component/shows/ShowGrid';
 import ActorsGrid from '../component/actors/ActorsGrid';
 import { useQuery } from '@tanstack/react-query';
 import styled, { css } from 'styled-components';
+import { TextCenter } from '../common/TextCenter';
 
 // const Button = styled.button`
 /* background: transparent;
@@ -93,11 +94,11 @@ const Home = () => {
 
   const renderApiData = () => {
     if (apiDataError) {
-      return <div>Error Occured: {apiDataError.message}</div>;
+      return <TextCenter>Error Occured: {apiDataError.message}</TextCenter>;
     }
 
     if (apiData?.length === 0) {
-      return <div>No Data Found</div>;
+      return <TextCenter>No Data Found</TextCenter>;
     }
 
     if (apiData) {
