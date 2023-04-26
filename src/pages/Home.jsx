@@ -4,6 +4,23 @@ import SearchForm from '../component/SearchForm';
 import ShowGrid from '../component/shows/ShowGrid';
 import ActorsGrid from '../component/actors/ActorsGrid';
 import { useQuery } from '@tanstack/react-query';
+import styled, { css } from 'styled-components';
+
+// const Button = styled.button`
+/* background: transparent;
+  border-radius: 3px;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+
+  ${props =>
+    props.primary &&
+    css`
+      background: palevioletred;
+      color: white;
+    `}; */
+// `;
 
 // const reducerFn = (currentCounter, action) => {
 //   switch (action.type) {
@@ -96,6 +113,8 @@ const Home = () => {
 
   return (
     <div>
+      {/* <Button>Click ME</Button>
+      <Button primary>Click ME</Button> */}
       <SearchForm onSearch={onSearch} />
       {/* <div>Counter: {counter}</div>
       <button type="button" onClick={onIncrement}>
